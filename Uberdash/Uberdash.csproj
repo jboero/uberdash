@@ -1,0 +1,269 @@
+﻿<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="3.5">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{FC8064DF-B0BC-4D03-B1AE-077F3387412C}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Mawenzy</RootNamespace>
+    <AssemblyName>Uberdash</AssemblyName>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>2.0</OldToolsVersion>
+    <StartupObject>Mawenzy.UI.UberdashMain</StartupObject>
+    <ApplicationIcon>uberdash_48.ico</ApplicationIcon>
+    <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
+    <TargetFrameworkSubset>
+    </TargetFrameworkSubset>
+    <SignManifests>false</SignManifests>
+    <SignAssembly>true</SignAssembly>
+    <DelaySign>false</DelaySign>
+    <AssemblyOriginatorKeyFile>Uberdash.snk</AssemblyOriginatorKeyFile>
+    <ManifestCertificateThumbprint>A8A362AA87BC13B1414C9AC6E0B054FBC8B0154E</ManifestCertificateThumbprint>
+    <ManifestKeyFile>Uberdash_TemporaryKey.pfx</ManifestKeyFile>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Runtime.Remoting" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="Tao.OpenGl, Version=2.1.0.12, Culture=neutral, PublicKeyToken=1ca010269a4501ef, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\taoframework-2.1.0\bin\Tao.OpenGl.dll</HintPath>
+    </Reference>
+    <Reference Include="Tao.Platform.Windows, Version=1.0.0.5, Culture=neutral, PublicKeyToken=701104b2da67a104, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\taoframework-2.1.0\bin\Tao.Platform.Windows.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Plugins\Ticker.cs" />
+    <Compile Include="Plugins\TickerTock.cs" />
+    <Compile Include="Plugins\PluginException.cs" />
+    <Compile Include="UI\BoeroViewShell.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="BrowserWrappers\BrowserContextMenuWrappers.cs" />
+    <Compile Include="UI\BrowserControls.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="UI\Browser.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\Browser.Designer.cs">
+      <DependentUpon>Browser.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BrowserWrappers\BrowserDropWrappers.cs" />
+    <Compile Include="BrowserWrappers\BrowserDragWrappers.cs" />
+    <Compile Include="BrowserWrappers\BrowserPluginWrapper.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="UI\UberdashMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\UberdashMain.Designer.cs">
+      <DependentUpon>UberdashMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\EncryptedTextBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="UI\ErrForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\ErrForm.Designer.cs">
+      <DependentUpon>ErrForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\MouseInputConfigger.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\MouseInputConfigger.Designer.cs">
+      <DependentUpon>MouseInputConfigger.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Options.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\Options.Designer.cs">
+      <DependentUpon>Options.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\PluginBrowser.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\PluginBrowser.Designer.cs">
+      <DependentUpon>PluginBrowser.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Plugins\PluginBase.cs" />
+    <Compile Include="Properties\GlobalSettings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <DependentUpon>GlobalSettings.settings</DependentUpon>
+    </Compile>
+    <Compile Include="UI\WarnDevelopers.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\WarnDevelopers.Designer.cs">
+      <DependentUpon>WarnDevelopers.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Util\DeskIcons.cs" />
+    <Compile Include="Util\Encoder.cs" />
+    <Compile Include="Util\IDrawable.cs" />
+    <Compile Include="Util\JumpCustom.cs" />
+    <Compile Include="Util\JumpElvis.cs" />
+    <Compile Include="Util\JumpGrad.cs" />
+    <Compile Include="Util\JumpRect.cs" />
+    <Compile Include="Util\JumpRectGroup.cs" />
+    <Compile Include="Util\RenderState.cs" />
+    <Compile Include="SettingsTables.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SettingsTables.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Shell\Interfaces\IQueryInfo.cs" />
+    <Compile Include="Shell\Interfaces\IShellExtInit.cs" />
+    <Compile Include="Shell\Interfaces\IEnumSTATSTG.cs" />
+    <Compile Include="Shell\Interfaces\IStorage.cs" />
+    <Compile Include="Shell\Interfaces\IStream.cs" />
+    <Compile Include="Shell\ShellBrowserUpdater.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Shell\Interfaces\IContextMenu.cs" />
+    <Compile Include="Shell\Interfaces\IDropSource.cs" />
+    <Compile Include="Shell\Interfaces\IDragSourceHelper.cs" />
+    <Compile Include="Shell\Interfaces\IDropTarget.cs" />
+    <Compile Include="Shell\Interfaces\IDropTargetHelper.cs" />
+    <Compile Include="Shell\Interfaces\IEnumIDList.cs" />
+    <Compile Include="Shell\Interfaces\IShellFolder.cs" />
+    <Compile Include="Shell\PIDL.cs" />
+    <Compile Include="Shell\ShellAPI.cs" />
+    <Compile Include="Shell\ShellBrowser.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Shell\ShellHelper.cs" />
+    <Compile Include="Shell\ShellImageList.cs" />
+    <Compile Include="Shell\ShellItem.cs" />
+    <Compile Include="Shell\StreamStorage.cs" />
+    <Compile Include="Util\Safety.cs" />
+    <Compile Include="Util\SingletonController.cs" />
+    <Service Include="{94E38DFF-614B-4cbd-B67C-F211BB35CE8B}" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="UI\BoeroViewShell.resx">
+      <DependentUpon>BoeroViewShell.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\Browser.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>Browser.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\UberdashMain.resx">
+      <DependentUpon>UberdashMain.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\ErrForm.resx">
+      <DependentUpon>ErrForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\MouseInputConfigger.resx">
+      <DependentUpon>MouseInputConfigger.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\Options.resx">
+      <DependentUpon>Options.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\PluginBrowser.resx">
+      <DependentUpon>PluginBrowser.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <SubType>Designer</SubType>
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\WarnDevelopers.resx">
+      <DependentUpon>WarnDevelopers.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\BrowseFolders.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\BrowserUp.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\BrowserForward.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\BrowserBack.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ticker.png" />
+    <Content Include="uberdash_48.ico" />
+    <None Include="Resources\ud_16.png" />
+    <None Include="Resources\Crystal_Clear_app_mouse.png" />
+    <None Include="Resources\mw_blur.png" />
+    <None Include="Resources\nErr.Icon.ico" />
+    <None Include="Resources\Crystal_Clear_app_ark2.png" />
+    <None Include="Resources\Crystal_Clear_action_configure.png" />
+    <None Include="Resources\Crystal_Clear_action_exit.png" />
+    <None Include="Resources\Crystal_Clear_action_lock.png" />
+    <None Include="Resources\up.png" />
+    <None Include="Resources\dn.png" />
+    <None Include="Resources\extensions.jpg" />
+    <None Include="app.config">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Properties\GlobalSettings.settings">
+      <Generator>PublicSettingsSingleFileGenerator</Generator>
+      <LastGenOutput>GlobalSettings.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Resources\Crystal_Clear_app_help_index.png" />
+    <None Include="SettingsTables.xsc">
+      <DependentUpon>SettingsTables.xsd</DependentUpon>
+    </None>
+    <None Include="SettingsTables.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>SettingsTables.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="SettingsTables.xss">
+      <DependentUpon>SettingsTables.xsd</DependentUpon>
+    </None>
+    <None Include="Uberdash.snk" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

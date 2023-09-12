@@ -1,0 +1,48 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="Mawenzy.Plugins.Google_Plugs.Properties" GeneratedClassName="GoogleSettings">
+  <Profiles />
+  <Settings>
+    <Setting Name="CompressTextures" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">True</Value>
+    </Setting>
+    <Setting Name="SwapInterval" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">600000</Value>
+    </Setting>
+    <Setting Name="TempUnits" Type="System.Char" Scope="User">
+      <Value Profile="(Default)">F</Value>
+    </Setting>
+    <Setting Name="NewsURL" Type="System.String" Scope="User">
+      <Value Profile="(Default)">http://news.google.com/?geo={REGION}</Value>
+    </Setting>
+    <Setting Name="AutoRefreshNews" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">False</Value>
+    </Setting>
+    <Setting Name="GoogleID" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="GooglePW" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="CalendarStyle" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="GoogleMarqueeSpeed" Type="System.Decimal" Scope="User">
+      <Value Profile="(Default)">10000</Value>
+    </Setting>
+    <Setting Name="CalendarURL" Type="System.String" Scope="User">
+      <Value Profile="(Default)">http://www.google.com/calendar/feeds/default/private/full</Value>
+    </Setting>
+    <Setting Name="WeatherURL" Type="System.String" Scope="User">
+      <Value Profile="(Default)">http://www.wunderground.com/cgi-bin/findweather/getForecast?query={REGION}&amp;wuSelect=WEATHER</Value>
+    </Setting>
+    <Setting Name="WeatherImagePath" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">http://img0.gmodules.com/</Value>
+    </Setting>
+    <Setting Name="GoogleWeatherURL" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">http://www.google.com/ig/api?weather={0}</Value>
+    </Setting>
+    <Setting Name="CalendarCamPos" Type="System.String" Scope="User">
+      <Value Profile="(Default)">5,0,0,-1400,0</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>

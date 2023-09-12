@@ -1,0 +1,576 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="3.5" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{94297253-D586-4300-9985-4F854BDFF7C5}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Mawenzy.Plugins</RootNamespace>
+    <AssemblyName>Mawenzy.BasePlugins</AssemblyName>
+    <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkSubset>
+    </TargetFrameworkSubset>
+    <ApplicationIcon>
+    </ApplicationIcon>
+    <SignAssembly>true</SignAssembly>
+    <AssemblyOriginatorKeyFile>Uberdash.snk</AssemblyOriginatorKeyFile>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Google.GData.AccessControl, Version=1.7.0.1, Culture=neutral, PublicKeyToken=b4b8eb9a7afc8328, processorArchitecture=MSIL" />
+    <Reference Include="Google.GData.Calendar, Version=1.7.0.1, Culture=neutral, PublicKeyToken=aa6748391206b888, processorArchitecture=MSIL" />
+    <Reference Include="Google.GData.Client, Version=1.7.0.1, Culture=neutral, PublicKeyToken=04a59ca9b0273830, processorArchitecture=MSIL" />
+    <Reference Include="Google.GData.Extensions, Version=1.7.0.1, Culture=neutral, PublicKeyToken=0b4c5df2ebf20876, processorArchitecture=MSIL" />
+    <Reference Include="Google.GData.GoogleBase, Version=1.7.0.1, Culture=neutral, PublicKeyToken=b361faa2ad5bd3db, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.DirectoryServices" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+    <Reference Include="Tao.OpenGl, Version=2.1.0.12, Culture=neutral, PublicKeyToken=1ca010269a4501ef, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\taoframework-2.1.0\bin\Tao.OpenGl.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="GooglePlugins\Alerts\AlertsConfig.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GooglePlugins\Alerts\AlertsConfig.Designer.cs">
+      <DependentUpon>AlertsConfig.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GooglePlugins\Alerts\Google_Alerts.cs" />
+    <Compile Include="GooglePlugins\Calendar\CalConfig.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GooglePlugins\Calendar\CalConfig.Designer.cs">
+      <DependentUpon>CalConfig.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GooglePlugins\Calendar\CalendarLayout.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GooglePlugins\Calendar\CalendarLayout.Designer.cs">
+      <DependentUpon>CalendarLayout.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GooglePlugins\Calendar\DayLayout.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GooglePlugins\Calendar\DayLayout.Designer.cs">
+      <DependentUpon>DayLayout.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GooglePlugins\Calendar\EventForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GooglePlugins\Calendar\EventForm.Designer.cs">
+      <DependentUpon>EventForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GooglePlugins\Calendar\Google_Calendar.cs" />
+    <Compile Include="Clock\Clock.cs" />
+    <Compile Include="Clock\ClockConfig.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Clock\ClockConfig.Designer.cs">
+      <DependentUpon>ClockConfig.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GeneralOptions\General_Options.cs" />
+    <Compile Include="GeneralOptions\MawenzyConfig.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GeneralOptions\MawenzyConfig.Designer.cs">
+      <DependentUpon>MawenzyConfig.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Calvin_Select\Calvin_Select.cs" />
+    <Compile Include="Calvin_Select\CalvinConfig.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Calvin_Select\CalvinConfig.Designer.cs">
+      <DependentUpon>CalvinConfig.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GeneralOptions\WhatsNew.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GeneralOptions\WhatsNew.Designer.cs">
+      <DependentUpon>WhatsNew.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GeneralOptions\WhatsNewData.Designer.cs">
+      <DependentUpon>WhatsNewData.xsd</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="GooglePlugins\Weather\GWConfig.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GooglePlugins\Weather\GWConfig.Designer.cs">
+      <DependentUpon>GWConfig.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OverlayDesktop\OverlayDesktopConfig.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="OverlayDesktop\OverlayDesktopConfig.Designer.cs">
+      <DependentUpon>OverlayDesktopConfig.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OverlayDesktop\Overlay_Desktop.cs" />
+    <Compile Include="GooglePlugins\GoogleSettings.Designer.cs">
+      <DependentUpon>GoogleSettings.settings</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Quasar\Instance.cs" />
+    <Compile Include="RSS\RaccoomXml\ConcreteOpmlFactory.cs" />
+    <Compile Include="RSS\RaccoomXml\ConcreteRssFactory.cs" />
+    <Compile Include="RSS\RaccoomXml\IPersistentManager.cs" />
+    <Compile Include="RSS\RaccoomXml\opmlbase.cs" />
+    <Compile Include="RSS\RaccoomXml\opmlbody.cs" />
+    <Compile Include="RSS\RaccoomXml\opmldocument.cs" />
+    <Compile Include="RSS\RaccoomXml\opmlhead.cs" />
+    <Compile Include="RSS\RaccoomXml\opmloutline.cs" />
+    <Compile Include="RSS\RaccoomXml\rssbase.cs" />
+    <Compile Include="RSS\RaccoomXml\rsschannel.cs" />
+    <Compile Include="RSS\RaccoomXml\rsscloud.cs" />
+    <Compile Include="RSS\RaccoomXml\rssenclosure.cs" />
+    <Compile Include="RSS\RaccoomXml\RssFeedManager.cs" />
+    <Compile Include="RSS\RaccoomXml\rssguid.cs" />
+    <Compile Include="RSS\RaccoomXml\rssimage.cs" />
+    <Compile Include="RSS\RaccoomXml\rssitem.cs" />
+    <Compile Include="RSS\RaccoomXml\rsssource.cs" />
+    <Compile Include="RSS\RaccoomXml\rsstextinput.cs" />
+    <Compile Include="RSS\RaccoomXml\XmlSerializationUtil.cs" />
+    <Compile Include="RSS\RSSConfig.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="RSS\RSSConfig.Designer.cs">
+      <DependentUpon>RSSConfig.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RSS\Themes\DefaultTickerLayout.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="RSS\Themes\DefaultTickerLayout.Designer.cs">
+      <DependentUpon>DefaultTickerLayout.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RSS\RSS_Reader.cs">
+    </Compile>
+    <Compile Include="SlideShow\SlideShowConfig.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="SlideShow\SlideShowConfig.Designer.cs">
+      <DependentUpon>SlideShowConfig.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SlideShow\Slide_Show_BG.cs" />
+    <Compile Include="Quasar\Quasar.cs" />
+    <Compile Include="Quasar\QuasarConfig.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Quasar\QuasarConfig.Designer.cs">
+      <DependentUpon>QuasarConfig.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GooglePlugins\Weather\DayLayout.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GooglePlugins\Weather\DayLayout.Designer.cs">
+      <DependentUpon>DayLayout.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GooglePlugins\Weather\Google_Weather.cs" />
+    <Compile Include="GooglePlugins\Weather\WeatherLayout.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GooglePlugins\Weather\WeatherLayout.Designer.cs">
+      <DependentUpon>WeatherLayout.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Win_Desktop\WinDesktopConfig.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Win_Desktop\WinDesktopConfig.Designer.cs">
+      <DependentUpon>WinDesktopConfig.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Win_Desktop\Win_Desktop.cs" />
+    <Compile Include="GooglePlugins\News\News.cs" />
+    <Compile Include="GooglePlugins\News\NewsConfig.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GooglePlugins\News\NewsConfig.Designer.cs">
+      <DependentUpon>NewsConfig.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GooglePlugins\News\NewsLayout.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GooglePlugins\News\NewsLayout.Designer.cs">
+      <DependentUpon>NewsLayout.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Snail\Picture_Snail.cs" />
+    <Compile Include="Snail\SnailConfig.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Snail\SnailConfig.Designer.cs">
+      <DependentUpon>SnailConfig.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Yahoo_Stocks\Yahoo_Stocks.cs" />
+    <Compile Include="Yahoo_Stocks\StickerConfig.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Yahoo_Stocks\StickerConfig.Designer.cs">
+      <DependentUpon>StickerConfig.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Yahoo_Stocks\StickerLayout.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Yahoo_Stocks\StickerLayout.Designer.cs">
+      <DependentUpon>StickerLayout.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="PluginSettings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <DependentUpon>PluginSettings.settings</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Uberdash\Überdash.csproj">
+      <Project>{FC8064DF-B0BC-4D03-B1AE-077F3387412C}</Project>
+      <Name>Überdash</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="PluginSettings.settings">
+      <Generator>PublicSettingsSingleFileGenerator</Generator>
+      <LastGenOutput>PluginSettings.Designer.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="GooglePlugins\Alerts\AlertsConfig.resx">
+      <DependentUpon>AlertsConfig.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GooglePlugins\Calendar\CalConfig.resx">
+      <DependentUpon>CalConfig.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GooglePlugins\Calendar\CalendarLayout.resx">
+      <DependentUpon>CalendarLayout.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GooglePlugins\Calendar\DayLayout.resx">
+      <DependentUpon>DayLayout.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GooglePlugins\Calendar\EventForm.resx">
+      <DependentUpon>EventForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Clock\ClockConfig.resx">
+      <DependentUpon>ClockConfig.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GeneralOptions\MawenzyConfig.resx">
+      <DependentUpon>MawenzyConfig.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GeneralOptions\WhatsNew.resx">
+      <DependentUpon>WhatsNew.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GooglePlugins\Weather\GWConfig.resx">
+      <DependentUpon>GWConfig.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GooglePlugins\Weather\WeatherLayout.resx">
+      <DependentUpon>WeatherLayout.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OverlayDesktop\OverlayDesktopConfig.resx">
+      <DependentUpon>OverlayDesktopConfig.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RSS\RSSConfig.resx">
+      <DependentUpon>RSSConfig.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RSS\Themes\DefaultTickerLayout.resx">
+      <DependentUpon>DefaultTickerLayout.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Calvin_Select\CalvinConfig.resx">
+      <DependentUpon>CalvinConfig.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SlideShow\SlideShowConfig.resx">
+      <DependentUpon>SlideShowConfig.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Quasar\QuasarConfig.resx">
+      <DependentUpon>QuasarConfig.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GooglePlugins\Weather\DayLayout.resx">
+      <DependentUpon>DayLayout.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Win_Desktop\WinDesktopConfig.resx">
+      <DependentUpon>WinDesktopConfig.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GooglePlugins\News\NewsConfig.resx">
+      <DependentUpon>NewsConfig.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GooglePlugins\News\NewsLayout.resx">
+      <DependentUpon>NewsLayout.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Snail\SnailConfig.resx">
+      <DependentUpon>SnailConfig.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Yahoo_Stocks\StickerConfig.resx">
+      <DependentUpon>StickerConfig.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Yahoo_Stocks\StickerLayout.resx">
+      <DependentUpon>StickerLayout.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icon_snail.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Crystal_Clear_app_Volume_Manager.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cc_yahoo_finance.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\up.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\down.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\news.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\mw_blur.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\mw.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\uberdash_32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Crystal_Clear_app_xclock.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\clock.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\clock_hand.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\rss.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Feed-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\feed_16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="RSS\RaccoomXml\atom.xsd" />
+    <None Include="RSS\RaccoomXml\atom.xsx">
+      <DependentUpon>atom.xsd</DependentUpon>
+    </None>
+    <None Include="Resources\cc_history_48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Crystal_Clear_app_mouse.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Crystal_Clear_action_player_play.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Crystal_Clear_app_katomic.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Crystal_Clear_mimetype_log.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\highlight.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\stickerHighlight.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cert_compar_extensions.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Refresh.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Crystal_Clear_action_window_nofullscreen.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Quick_restart.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Crystal_Clear_app_logout.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\news_16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\news.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\min_16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Refresh_16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\auto_16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\no_16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\max_16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\d.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\u.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ud_16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\rss_crn_tl.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\rss_brd_l.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\rss_brd_t.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\brd_r.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\brd_b.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\brd_t.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\brd_l.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="GeneralOptions\WhatsNewData.xsc">
+      <DependentUpon>WhatsNewData.xsd</DependentUpon>
+    </None>
+    <None Include="GeneralOptions\WhatsNewData.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>WhatsNewData.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="GeneralOptions\WhatsNewData.xss">
+      <DependentUpon>WhatsNewData.xsd</DependentUpon>
+    </None>
+    <None Include="Resources\rss_body.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\quasar.jpg" />
+    <None Include="Uberdash.snk" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\calvin_faces.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="GooglePlugins\GoogleSettings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>GoogleSettings.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Resources\calvin_32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\alerts.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\apps-internet.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\banner.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\calendar.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Crystal_Clear_app_help_index.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\edit-add.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\protoborderless.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\protoframe.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\weather.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\overlay.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Crystal_Clear_app_tutorials.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Crystal_Clear_app_desktopshare.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  <PropertyGroup>
+    <PostBuildEvent>mkdir "$(SolutionDir)Uberdash\$(OutDir)plugins\"
+copy /Y "$(TargetPath)" "$(SolutionDir)Uberdash\$(OutDir)plugins\"</PostBuildEvent>
+  </PropertyGroup>
+</Project>

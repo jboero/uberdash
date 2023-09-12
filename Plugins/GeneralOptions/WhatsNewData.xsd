@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="WhatsNewData" targetNamespace="http://tempuri.org/WhatsNewData.xsd" xmlns:mstns="http://tempuri.org/WhatsNewData.xsd" xmlns="http://tempuri.org/WhatsNewData.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="WhatsNewData" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_DataSetName="WhatsNewData" msprop:Generator_UserDSName="WhatsNewData" msprop:EnableTableAdapterManager="true">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="NewPluginDetail" msprop:Generator_UserTableName="NewPluginDetail" msprop:Generator_RowDeletedName="NewPluginDetailRowDeleted" msprop:Generator_TableClassName="NewPluginDetailDataTable" msprop:Generator_RowChangedName="NewPluginDetailRowChanged" msprop:Generator_RowClassName="NewPluginDetailRow" msprop:Generator_RowChangingName="NewPluginDetailRowChanging" msprop:Generator_RowEvArgName="NewPluginDetailRowChangeEvent" msprop:Generator_RowEvHandlerName="NewPluginDetailRowChangeEventHandler" msprop:Generator_TablePropName="NewPluginDetail" msprop:Generator_TableVarName="tableNewPluginDetail" msprop:Generator_RowDeletingName="NewPluginDetailRowDeleting">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="IconURL" msprop:Generator_UserColumnName="IconURL" msprop:Generator_ColumnPropNameInRow="IconURL" msprop:Generator_ColumnVarNameInTable="columnIconURL" msprop:Generator_ColumnPropNameInTable="IconURLColumn" type="xs:string" default="http://www.mawenzy.com/images/404.png" minOccurs="0" />
+              <xs:element name="Title" msprop:Generator_UserColumnName="Title" msprop:Generator_ColumnPropNameInRow="Title" msprop:Generator_ColumnVarNameInTable="columnTitle" msprop:Generator_ColumnPropNameInTable="TitleColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="Version" msprop:Generator_UserColumnName="Version" msprop:Generator_ColumnPropNameInRow="Version" msprop:Generator_ColumnVarNameInTable="columnVersion" msprop:Generator_ColumnPropNameInTable="VersionColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="Author" msprop:Generator_UserColumnName="Author" msprop:Generator_ColumnPropNameInRow="Author" msprop:Generator_ColumnVarNameInTable="columnAuthor" msprop:Generator_ColumnPropNameInTable="AuthorColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="Description" msprop:Generator_UserColumnName="Description" msprop:Generator_ColumnPropNameInRow="Description" msprop:Generator_ColumnVarNameInTable="columnDescription" msprop:Generator_ColumnPropNameInTable="DescriptionColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="Date" msprop:Generator_UserColumnName="Date" msprop:Generator_ColumnPropNameInRow="Date" msprop:Generator_ColumnVarNameInTable="columnDate" msprop:Generator_ColumnPropNameInTable="DateColumn" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="Link" msprop:Generator_UserColumnName="Link" msprop:Generator_ColumnPropNameInRow="Link" msprop:Generator_ColumnVarNameInTable="columnLink" msprop:Generator_ColumnPropNameInTable="LinkColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="NewsHeader" msprop:Generator_UserColumnName="NewsHeader" msprop:Generator_ColumnPropNameInRow="NewsHeader" msprop:Generator_ColumnVarNameInTable="columnNewsHeader" msprop:Generator_ColumnPropNameInTable="NewsHeaderColumn" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="NewsHeader" msprop:Generator_UserTableName="NewsHeader" msprop:Generator_RowDeletedName="NewsHeaderRowDeleted" msprop:Generator_TableClassName="NewsHeaderDataTable" msprop:Generator_RowChangedName="NewsHeaderRowChanged" msprop:Generator_RowClassName="NewsHeaderRow" msprop:Generator_RowChangingName="NewsHeaderRowChanging" msprop:Generator_RowEvArgName="NewsHeaderRowChangeEvent" msprop:Generator_RowEvHandlerName="NewsHeaderRowChangeEventHandler" msprop:Generator_TablePropName="NewsHeader" msprop:Generator_TableVarName="tableNewsHeader" msprop:Generator_RowDeletingName="NewsHeaderRowDeleting">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="AnnouncementHtml" msprop:Generator_UserColumnName="AnnouncementHtml" msprop:Generator_ColumnPropNameInRow="AnnouncementHtml" msprop:Generator_ColumnVarNameInTable="columnAnnouncementHtml" msprop:Generator_ColumnPropNameInTable="AnnouncementHtmlColumn" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+  <xs:annotation>
+    <xs:appinfo>
+      <msdata:Relationship name="NewsHeader_NewPluginDetail" msdata:parent="NewsHeader" msdata:child="NewPluginDetail" msdata:parentkey="AnnouncementHtml" msdata:childkey="IconURL" msprop:Generator_UserRelationName="NewsHeader_NewPluginDetail" msprop:Generator_RelationVarName="relationNewsHeader_NewPluginDetail" msprop:Generator_UserChildTable="NewPluginDetail" msprop:Generator_UserParentTable="NewsHeader" msprop:Generator_ParentPropName="NewsHeaderRow" msprop:Generator_ChildPropName="GetNewPluginDetailRows" />
+    </xs:appinfo>
+  </xs:annotation>
+</xs:schema>

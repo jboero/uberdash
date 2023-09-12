@@ -1,0 +1,343 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="URLUberdashRSSPolicy" xml:space="preserve">
+    <value>http://www.uberdash.com/plugins/rssPolicy.html</value>
+    <comment>RSS policy and disclaimer.</comment>
+  </data>
+  <data name="RSS_Invalid_NoChannel" xml:space="preserve">
+    <value>There appears to be no 'channel' tag in the feed {0}.</value>
+    <comment>Rss feed {0} missing &lt;channel&gt; tag.</comment>
+  </data>
+  <data name="ERR_Yahoo_API" xml:space="preserve">
+    <value>Yahoo stock api is unaccessible.</value>
+    <comment>For stock ticker data connectivity</comment>
+  </data>
+  <data name="RSS_ConnectivityFail" xml:space="preserve">
+    <value>The RSS feed "{FEED}" had connection problems and did not load.</value>
+    <comment>RSS connection error.</comment>
+  </data>
+  <data name="URLUberdash" xml:space="preserve">
+    <value>http://www.mawenzy.com/uberdash</value>
+    <comment>Uberdash home page.</comment>
+  </data>
+  <data name="RSS_Invalid_NoRSSTag" xml:space="preserve">
+    <value>There appears to be no RSS tag in the feed {0}.</value>
+    <comment>RSS feed {0} missing &lt;rss&gt; tag.</comment>
+  </data>
+  <data name="LabRefresh" xml:space="preserve">
+    <value>Refresh delay
+({0} sec):</value>
+  </data>
+  <data name="ERR_WinDesktop" xml:space="preserve">
+    <value>Unable to read desktop background picture.</value>
+    <comment>Default desktop picture settings couldn't be read.</comment>
+  </data>
+  <data name="INFO_SymbolPrefix" xml:space="preserve">
+    <value>Symbol: {0}</value>
+  </data>
+  <data name="INFO_SymbolOpen" xml:space="preserve">
+    <value>Open link: {0}</value>
+  </data>
+  <data name="CalendarCredErr" xml:space="preserve">
+    <value>Google Calendar has a beef with you. It says "{0}"</value>
+  </data>
+  <data name="CalendarFatalErr" xml:space="preserve">
+    <value>Google Calendar has encountered an unrecoverable error and has disabled itself: {0}</value>
+  </data>
+  <data name="ERR_GWeather" xml:space="preserve">
+    <value>Google Weather connectivity failure.</value>
+    <comment>Weather api failure.</comment>
+  </data>
+  <data name="MarqueeSpeed" xml:space="preserve">
+    <value>Google Marquee Speed ({0}/{1}):</value>
+  </data>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="alerts" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\alerts.gif;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="apps_internet" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\apps-internet.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="auto_16" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\auto_16.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="banner" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\banner.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="brd_b" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\brd_b.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="brd_l" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\brd_l.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="brd_r" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\brd_r.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="brd_t" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\brd_t.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="calendar" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\calendar.gif;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="calvin_32" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\calvin_32.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="calvin_faces" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\calvin_faces.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="cc_history_48" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\cc_history_48.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="cc_yahoo_finance" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\cc_yahoo_finance.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="cert_compar_extensions" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\cert_compar_extensions.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="default_clock" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\clock.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="clock_hand" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\clock_hand.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Crystal_Clear_action_player_play" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\crystal_clear_action_player_play.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Crystal_Clear_action_window_nofullscreen" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\crystal_clear_action_window_nofullscreen.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Crystal_Clear_app_help_index" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\crystal_clear_app_help_index.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Crystal_Clear_app_katomic" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\crystal_clear_app_katomic.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Crystal_Clear_app_logout" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\crystal_clear_app_logout.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Crystal_Clear_app_mouse" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\crystal_clear_app_mouse.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Crystal_Clear_app_Volume_Manager" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\crystal_clear_app_volume_manager.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Crystal_Clear_app_xclock" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\crystal_clear_app_xclock.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Crystal_Clear_mimetype_log" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\crystal_clear_mimetype_log.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="down" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\down.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="edit_add" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\edit-add.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="feed_16" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\feed_16.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="rss" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\feed-icon.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="highlight" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\highlight.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="icon_snail" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\icon_snail.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="max_16" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\max_16.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="min_16" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\min_16.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="mw" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\mw.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="mw_blur" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\mw_blur.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="news" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\news.gif;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="news1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\news.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="news_16" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\news_16.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="no_16" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\no_16.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="protoborderless" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\protoborderless.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="protoframe" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\protoframe.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="quasar" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\quasar.jpg;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Quick_restart" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\quick_restart.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Refresh" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\refresh.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Refresh_16" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\refresh_16.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="rss_32" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\rss.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="rss_body" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\rss_body.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="rss_brd_l" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\rss_brd_l.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="rss_brd_t" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\rss_brd_t.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="rss_crn_tl" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\rss_crn_tl.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="stickerHighlight" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\stickerhighlight.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="uberdash_32" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\uberdash_32.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="up" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\up.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="weather" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\weather.gif;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="overlay" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\overlay.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Crystal_Clear_app_desktopshare" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Crystal_Clear_app_desktopshare.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Crystal_Clear_app_tutorials" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Crystal_Clear_app_tutorials.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+</root>

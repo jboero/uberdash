@@ -1,0 +1,61 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="SettingsTables" targetNamespace="http://tempuri.org/SettingsTables.xsd" xmlns:mstns="http://tempuri.org/SettingsTables.xsd" xmlns="http://tempuri.org/SettingsTables.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="SettingsTables" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_UserDSName="SettingsTables" msprop:Generator_DataSetName="SettingsTables" msprop:EnableTableAdapterManager="true">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="IconPositions" msprop:Generator_UserTableName="IconPositions" msprop:Generator_RowDeletedName="IconPositionsRowDeleted" msprop:Generator_RowChangedName="IconPositionsRowChanged" msprop:Generator_RowClassName="IconPositionsRow" msprop:Generator_RowChangingName="IconPositionsRowChanging" msprop:Generator_RowEvArgName="IconPositionsRowChangeEvent" msprop:Generator_RowEvHandlerName="IconPositionsRowChangeEventHandler" msprop:Generator_TableClassName="IconPositionsDataTable" msprop:Generator_TableVarName="tableIconPositions" msprop:Generator_RowDeletingName="IconPositionsRowDeleting" msprop:Generator_TablePropName="IconPositions">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Path" msprop:Generator_UserColumnName="Path" msprop:nullValue="_null" msprop:Generator_ColumnPropNameInRow="Path" msprop:Generator_ColumnPropNameInTable="PathColumn" msprop:Generator_ColumnVarNameInTable="columnPath" type="xs:string" minOccurs="0" />
+              <xs:element name="X" msprop:Generator_UserColumnName="X" msprop:Generator_ColumnPropNameInRow="X" msprop:Generator_ColumnVarNameInTable="columnX" msprop:Generator_ColumnPropNameInTable="XColumn" type="xs:int" minOccurs="0" />
+              <xs:element name="Y" msprop:Generator_UserColumnName="Y" msprop:Generator_ColumnPropNameInRow="Y" msprop:Generator_ColumnVarNameInTable="columnY" msprop:Generator_ColumnPropNameInTable="YColumn" type="xs:int" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="Plugins" msprop:Generator_UserTableName="Plugins" msprop:Generator_RowDeletedName="PluginsRowDeleted" msprop:Generator_RowChangedName="PluginsRowChanged" msprop:Generator_RowClassName="PluginsRow" msprop:Generator_RowChangingName="PluginsRowChanging" msprop:Generator_RowEvArgName="PluginsRowChangeEvent" msprop:Generator_RowEvHandlerName="PluginsRowChangeEventHandler" msprop:Generator_TableClassName="PluginsDataTable" msprop:Generator_TableVarName="tablePlugins" msprop:Generator_RowDeletingName="PluginsRowDeleting" msprop:Generator_TablePropName="Plugins">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="PlugName" msprop:Generator_UserColumnName="PlugName" msprop:Generator_ColumnPropNameInRow="PlugName" msprop:Generator_ColumnVarNameInTable="columnPlugName" msprop:Generator_ColumnPropNameInTable="PlugNameColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="Assembly" msprop:Generator_UserColumnName="Assembly" msprop:Generator_ColumnPropNameInRow="Assembly" msprop:Generator_ColumnVarNameInTable="columnAssembly" msprop:Generator_ColumnPropNameInTable="AssemblyColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="Enabled" msprop:Generator_UserColumnName="Enabled" msprop:nullValue="_throw" msprop:Generator_ColumnVarNameInTable="columnEnabled" msprop:Generator_ColumnPropNameInTable="EnabledColumn" msprop:Generator_ColumnPropNameInRow="Enabled" type="xs:boolean" default="false" minOccurs="0" />
+              <xs:element name="Layer" msprop:Generator_UserColumnName="Layer" msprop:Generator_ColumnPropNameInRow="Layer" msprop:Generator_ColumnVarNameInTable="columnLayer" msprop:Generator_ColumnPropNameInTable="LayerColumn" type="xs:int" minOccurs="0" />
+              <xs:element name="Dock" msprop:Generator_UserColumnName="Dock" msprop:Generator_ColumnPropNameInRow="Dock" msprop:Generator_ColumnVarNameInTable="columnDock" msprop:Generator_ColumnPropNameInTable="DockColumn" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="Errors" msprop:Generator_UserTableName="Errors" msprop:Generator_RowDeletedName="ErrorsRowDeleted" msprop:Generator_TableClassName="ErrorsDataTable" msprop:Generator_RowChangedName="ErrorsRowChanged" msprop:Generator_RowClassName="ErrorsRow" msprop:Generator_RowChangingName="ErrorsRowChanging" msprop:Generator_RowEvArgName="ErrorsRowChangeEvent" msprop:Generator_RowEvHandlerName="ErrorsRowChangeEventHandler" msprop:Generator_TablePropName="Errors" msprop:Generator_TableVarName="tableErrors" msprop:Generator_RowDeletingName="ErrorsRowDeleting">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Time" msprop:Generator_UserColumnName="Time" msprop:Generator_ColumnPropNameInRow="Time" msprop:Generator_ColumnVarNameInTable="columnTime" msprop:Generator_ColumnPropNameInTable="TimeColumn" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="Plugin" msprop:Generator_UserColumnName="Plugin" msprop:Generator_ColumnPropNameInRow="Plugin" msprop:Generator_ColumnVarNameInTable="columnPlugin" msprop:Generator_ColumnPropNameInTable="PluginColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="24" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Error" msprop:Generator_UserColumnName="Error" msprop:Generator_ColumnPropNameInRow="Error" msprop:Generator_ColumnVarNameInTable="columnError" msprop:Generator_ColumnPropNameInTable="ErrorColumn" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="Constraint1">
+      <xs:selector xpath=".//mstns:IconPositions" />
+      <xs:field xpath="mstns:Path" />
+    </xs:unique>
+    <xs:unique name="Plugins_Constraint1" msdata:ConstraintName="Constraint1">
+      <xs:selector xpath=".//mstns:Plugins" />
+      <xs:field xpath="mstns:PlugName" />
+    </xs:unique>
+  </xs:element>
+</xs:schema>

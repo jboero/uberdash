@@ -1,0 +1,209 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="3.5" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{8F3ED869-338C-4508-8727-212968316E42}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Mawenzy.Plugins.Google_Plugs</RootNamespace>
+    <AssemblyName>Plugins.Google</AssemblyName>
+    <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkSubset>
+    </TargetFrameworkSubset>
+    <SignAssembly>true</SignAssembly>
+    <AssemblyOriginatorKeyFile>Uberdash.snk</AssemblyOriginatorKeyFile>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Google.GData.AccessControl, Version=1.7.0.1, Culture=neutral, PublicKeyToken=b4b8eb9a7afc8328, processorArchitecture=MSIL" />
+    <Reference Include="Google.GData.Calendar, Version=1.7.0.1, Culture=neutral, PublicKeyToken=aa6748391206b888, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Google.GData.Client, Version=1.7.0.1, Culture=neutral, PublicKeyToken=04a59ca9b0273830, processorArchitecture=MSIL" />
+    <Reference Include="Google.GData.Extensions, Version=1.7.0.1, Culture=neutral, PublicKeyToken=0b4c5df2ebf20876, processorArchitecture=MSIL" />
+    <Reference Include="Google.GData.GoogleBase, Version=1.7.0.1, Culture=neutral, PublicKeyToken=b361faa2ad5bd3db, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+    <Reference Include="Tao.OpenGl, Version=2.1.0.12, Culture=neutral, PublicKeyToken=1ca010269a4501ef, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\taoframework-2.1.0\bin\Tao.OpenGl.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Alerts\AlertsConfig.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Alerts\AlertsConfig.Designer.cs">
+      <DependentUpon>AlertsConfig.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Alerts\Google_Alerts.cs" />
+    <Compile Include="Calendar\CalendarLayout.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Calendar\CalendarLayout.Designer.cs">
+      <DependentUpon>CalendarLayout.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Calendar\DayLayout.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Calendar\DayLayout.Designer.cs">
+      <DependentUpon>DayLayout.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Calendar\EventForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Calendar\EventForm.Designer.cs">
+      <DependentUpon>EventForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Calendar\Google_Calendar.cs" />
+    <Compile Include="Calendar\CalConfig.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Calendar\CalConfig.Designer.cs">
+      <DependentUpon>CalConfig.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\GoogleResources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>GoogleResources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\GoogleSettings.Designer.cs">
+      <DependentUpon>GoogleSettings.settings</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Weather\DayLayout.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Weather\DayLayout.Designer.cs">
+      <DependentUpon>DayLayout.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Weather\Google_Weather.cs" />
+    <Compile Include="Weather\GWConfig.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Weather\GWConfig.Designer.cs">
+      <DependentUpon>GWConfig.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Weather\WeatherLayout.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Weather\WeatherLayout.Designer.cs">
+      <DependentUpon>WeatherLayout.cs</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Plugins\Mawenzy.BasePlugins.csproj">
+      <Project>{94297253-D586-4300-9985-4F854BDFF7C5}</Project>
+      <Name>Mawenzy.BasePlugins</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Uberdash\Uberdash.csproj">
+      <Project>{FC8064DF-B0BC-4D03-B1AE-077F3387412C}</Project>
+      <Name>Uberdash</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Alerts\AlertsConfig.resx">
+      <DependentUpon>AlertsConfig.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Calendar\CalConfig.resx">
+      <DependentUpon>CalConfig.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Calendar\CalendarLayout.resx">
+      <DependentUpon>CalendarLayout.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Calendar\DayLayout.resx">
+      <DependentUpon>DayLayout.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Calendar\EventForm.resx">
+      <DependentUpon>EventForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\GoogleResources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>GoogleResources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Weather\DayLayout.resx">
+      <DependentUpon>DayLayout.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Weather\GWConfig.resx">
+      <DependentUpon>GWConfig.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Weather\WeatherLayout.resx">
+      <DependentUpon>WeatherLayout.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\GoogleSettings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>GoogleSettings.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Resources\logo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Crystal_Clear_app_help_index.png" />
+    <None Include="Resources\calendar.gif" />
+    <None Include="app.config" />
+    <None Include="Resources\alerts.gif" />
+    <None Include="Resources\news.gif" />
+    <None Include="Resources\weather.gif" />
+    <None Include="Uberdash.snk" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\protoframe.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\protoborderless.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\banner2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\edit-add-2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\applications-internet-2.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  <PropertyGroup>
+    <PostBuildEvent>mkdir $(SolutionDir)Uberdash\$(OutDir)plugins\
+copy /Y $(TargetPath) $(SolutionDir)Uberdash\$(OutDir)\plugins
+copy /Y $(TargetDir)\*.dll $(SolutionDir)Uberdash\$(OutDir)</PostBuildEvent>
+  </PropertyGroup>
+</Project>

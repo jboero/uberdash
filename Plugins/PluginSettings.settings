@@ -1,0 +1,109 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="Mawenzy.Plugins" GeneratedClassName="PluginSettings">
+  <Profiles />
+  <Settings>
+    <Setting Name="SuppImageTypes" Type="System.Collections.Specialized.StringCollection" Scope="User">
+      <Value Profile="(Default)">&lt;?xml version="1.0" encoding="utf-16"?&gt;
+&lt;ArrayOfString xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;
+  &lt;string&gt;*.jpg&lt;/string&gt;
+  &lt;string&gt;*.jpeg&lt;/string&gt;
+  &lt;string&gt;*.png&lt;/string&gt;
+  &lt;string&gt;*.bmp&lt;/string&gt;
+  &lt;string&gt;*.gif&lt;/string&gt;
+  &lt;string&gt;*.tif&lt;/string&gt;
+  &lt;string&gt;*.tiff&lt;/string&gt;
+&lt;/ArrayOfString&gt;</Value>
+    </Setting>
+    <Setting Name="ShowNewPlugins" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">True</Value>
+    </Setting>
+    <Setting Name="FPS" Type="System.Decimal" Scope="User">
+      <Value Profile="(Default)">80</Value>
+    </Setting>
+    <Setting Name="StickerMouseButton" Type="System.Windows.Forms.MouseButtons" Scope="User">
+      <Value Profile="(Default)">Middle</Value>
+    </Setting>
+    <Setting Name="StockURL" Type="System.String" Scope="User">
+      <Value Profile="(Default)">http://quote.yahoo.com/d/quotes.csv?s={0}&amp;f={1}</Value>
+    </Setting>
+    <Setting Name="MawenzyMarqueeSpeed" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">30</Value>
+    </Setting>
+    <Setting Name="StickerBackColor" Type="System.Drawing.Color" Scope="User">
+      <Value Profile="(Default)">GradientActiveCaption</Value>
+    </Setting>
+    <Setting Name="StickerBottomColor" Type="System.Drawing.Color" Scope="User">
+      <Value Profile="(Default)">ActiveCaption</Value>
+    </Setting>
+    <Setting Name="StickerSymbols" Type="System.String" Scope="User">
+      <Value Profile="(Default)">^DJI,^IXIC,^GSPC</Value>
+    </Setting>
+    <Setting Name="SnailMaxPics" Type="System.Decimal" Scope="User">
+      <Value Profile="(Default)">20</Value>
+    </Setting>
+    <Setting Name="Snail3DMode" Type="System.String" Scope="User">
+      <Value Profile="(Default)">None</Value>
+    </Setting>
+    <Setting Name="SnailBlurQuality" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">1</Value>
+    </Setting>
+    <Setting Name="SnailRotateOnMouseWheel" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">True</Value>
+    </Setting>
+    <Setting Name="SlideShowPath" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="SlideShowDuration" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">30</Value>
+    </Setting>
+    <Setting Name="SlideShowSpeed" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">10</Value>
+    </Setting>
+    <Setting Name="SlideShowCompress" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">True</Value>
+    </Setting>
+    <Setting Name="RSSAddressList" Type="System.Collections.Specialized.StringCollection" Scope="User">
+      <Value Profile="(Default)">&lt;?xml version="1.0" encoding="utf-16"?&gt;
+&lt;ArrayOfString xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" /&gt;</Value>
+    </Setting>
+    <Setting Name="NewsRegion" Type="System.String" Scope="User">
+      <Value Profile="(Default)">53092</Value>
+    </Setting>
+    <Setting Name="NewsURL" Type="System.String" Scope="User">
+      <Value Profile="(Default)">http://news.google.com/?geo={REGION}</Value>
+    </Setting>
+    <Setting Name="NewsSwapInterval" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">60000</Value>
+    </Setting>
+    <Setting Name="NewsAutoRefresh" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">False</Value>
+    </Setting>
+    <Setting Name="StickerModifierKeys" Type="System.Windows.Forms.Keys" Scope="User">
+      <Value Profile="(Default)">None</Value>
+    </Setting>
+    <Setting Name="StickerLinkFormat" Type="System.String" Scope="User">
+      <Value Profile="(Default)">http://finance.yahoo.com/q?s={0}</Value>
+    </Setting>
+    <Setting Name="RSS_MaxItems" Type="System.Decimal" Scope="User">
+      <Value Profile="(Default)">10</Value>
+    </Setting>
+    <Setting Name="SlideShow_rotationMode" Type="System.String" Scope="User">
+      <Value Profile="(Default)">Random</Value>
+    </Setting>
+    <Setting Name="RSS_RotationMode" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="OverlayColor" Type="System.Drawing.Color" Scope="User">
+      <Value Profile="(Default)">0, 0, 1</Value>
+    </Setting>
+    <Setting Name="QuasarDetail" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">1</Value>
+    </Setting>
+    <Setting Name="QuasarPointSmooth" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">False</Value>
+    </Setting>
+    <Setting Name="QuasarCount" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">1</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>
